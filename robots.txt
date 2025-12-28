@@ -1,0 +1,25 @@
+# BOWS CARAVAN - robots.txt
+# https://bowscaravan.com
+
+User-agent: *
+Allow: /
+
+# Ana sayfalar
+Allow: /index.html
+Allow: /ankara-karavan-uretimi.html
+Allow: /ankara-motokaravan-yapimi.html
+Allow: /ankara-karavan-tamiri.html
+Allow: /ankara-karavan-tadilati.html
+
+# Kaynaklar
+Allow: /style.css
+Allow: /script.js
+Allow: /*.jpg
+Allow: /*.png
+Allow: /*.webp
+
+# Sitemap
+Sitemap: https://bowscaravan.com/sitemap.xml
+
+# Crawl-delay (isteğe bağlı, sunucu yükünü azaltmak için)
+# Crawl-delay: 10
