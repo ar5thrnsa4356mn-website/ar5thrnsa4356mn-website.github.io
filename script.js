@@ -36,8 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Handle navigation link clicks
     navLinks.forEach(link => {
         link.addEventListener('click', function (e) {
-            e.preventDefault();
-            const target = this.getAttribute('href');
+            const href = this.getAttribute('href');
 
             // Close mobile menu if open
             if (navMenu.classList.contains('active')) {
@@ -46,7 +45,12 @@ document.addEventListener('DOMContentLoaded', function () {
                 document.body.style.overflow = '';
             }
 
-            smoothScroll(target);
+            // Only prevent default for same-page anchors (starting with #)
+            if (href.startsWith('#')) {
+                e.preventDefault();
+                smoothScroll(href);
+            }
+            // For links like "index.html#section", let browser handle navigation
         });
     });
 
