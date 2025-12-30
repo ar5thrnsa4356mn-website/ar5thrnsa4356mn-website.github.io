@@ -1,5 +1,5 @@
 /**
- * Bows Karavan - JavaScript Functionality
+ * Bow's Karavan - JavaScript Functionality
  * Smooth scrolling, hamburger menu, animations, and interactivity
  */
 
@@ -427,7 +427,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // ========================================
     // Console Welcome Message
     // ========================================
-    console.log('%c🚐 Bows Caravan', 'font-size: 24px; font-weight: bold; color: #FFD700; background: #001F3F; padding: 10px 20px; border-radius: 8px;');
+    console.log('%c🚐 Bow\'s Caravan', 'font-size: 24px; font-weight: bold; color: #FFD700; background: #001F3F; padding: 10px 20px; border-radius: 8px;');
     console.log('%cKaravan üretimi ve bakım hizmetlerinde güvenin adresi!', 'font-size: 14px; color: #666;');
     console.log('%cwww.bowscaravan.com', 'font-size: 12px; color: #999;');
 });

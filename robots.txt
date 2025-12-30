@@ -1,4 +1,4 @@
-# BOWS CARAVAN - robots.txt
+# BOW'S CARAVAN - robots.txt
 # https://bowscaravan.com
 
 User-agent: *
