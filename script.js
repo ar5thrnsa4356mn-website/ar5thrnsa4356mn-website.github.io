@@ -107,9 +107,23 @@ document.addEventListener('DOMContentLoaded', function () {
     // ========================================
     let lastScroll = 0;
 
-    window.addEventListener('scroll', function () {
-        const currentScroll = window.pageYOffset;
+    // Optimized Scroll Handler with requestAnimationFrame
+    let ticking = false;
 
+    window.addEventListener('scroll', function () {
+        lastScroll = window.pageYOffset;
+
+        if (!ticking) {
+            window.requestAnimationFrame(function () {
+                handleScroll(lastScroll);
+                ticking = false;
+            });
+
+            ticking = true;
+        }
+    });
+
+    function handleScroll(currentScroll) {
         // Add scrolled class for header background
         if (currentScroll > 50) {
             header.classList.add('scrolled');
@@ -126,9 +140,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Update active nav link based on scroll position
         updateActiveNavLink();
-
-        lastScroll = currentScroll;
-    });
+    }
 
     // ========================================
     // Active Navigation Link
