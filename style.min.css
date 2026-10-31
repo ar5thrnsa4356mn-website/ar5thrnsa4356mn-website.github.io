@@ -1471,7 +1471,7 @@ ul {
 
 .why-us-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 24px;
 }
 
@@ -1518,6 +1518,22 @@ ul {
 
 .highlight-section ul li::before {
     color: var(--gold);
+}
+
+.highlight-section .why-us-item p {
+    color: var(--gray-600);
+}
+
+@media (max-width: 992px) {
+    .why-us-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .why-us-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 .cta-section {
