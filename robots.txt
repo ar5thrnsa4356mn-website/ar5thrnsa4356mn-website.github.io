@@ -10,6 +10,8 @@ Allow: /ankara-karavan-uretimi.html
 Allow: /ankara-motokaravan-yapimi.html
 Allow: /ankara-karavan-tamiri.html
 Allow: /ankara-karavan-tadilati.html
+Allow: /ankara-cekme-karavan-imalati.html
+Allow: /ankara-karavan-solar-panel.html
 
 # Kaynaklar
 Allow: /style.css
