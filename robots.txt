@@ -1,5 +1,5 @@
 # BOW'S CARAVAN - robots.txt
-# https://bowscaravan.com
+# https://www.bowscaravan.com
 
 User-agent: *
 Allow: /
@@ -19,7 +19,7 @@ Allow: /*.png
 Allow: /*.webp
 
 # Sitemap
-Sitemap: https://bowscaravan.com/sitemap.xml
+Sitemap: https://www.bowscaravan.com/sitemap.xml
 
 # Crawl-delay (isteğe bağlı, sunucu yükünü azaltmak için)
 # Crawl-delay: 10
