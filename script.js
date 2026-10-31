@@ -131,11 +131,9 @@ document.addEventListener('DOMContentLoaded', function () {
             header.classList.remove('scrolled');
         }
 
-        // Show/hide back to top button
-        if (currentScroll > 500) {
-            backToTop.classList.add('visible');
-        } else {
-            backToTop.classList.remove('visible');
+        // Show/hide back to top button (only on pages that have it)
+        if (backToTop) {
+            backToTop.classList.toggle('visible', currentScroll > 500);
         }
 
         // Update active nav link based on scroll position
@@ -168,12 +166,14 @@ document.addEventListener('DOMContentLoaded', function () {
     // ========================================
     // Back to Top Button
     // ========================================
-    backToTop.addEventListener('click', function () {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
+    if (backToTop) {
+        backToTop.addEventListener('click', function () {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
         });
-    });
+    }
 
     // ========================================
     // Animate Stats Counter
