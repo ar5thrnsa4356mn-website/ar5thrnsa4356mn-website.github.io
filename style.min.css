@@ -2290,3 +2290,56 @@ ul {
         padding: 6px 0;
     }
 }
+
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.photo-gallery figure {
+    margin: 0;
+    background: var(--white);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+}
+
+.photo-gallery img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+}
+
+.photo-gallery figcaption {
+    padding: 10px 12px;
+    font-size: 14px;
+    color: var(--gray-700);
+}
+
+.photo-gallery-single {
+    grid-template-columns: minmax(0, 420px);
+}
+
+.photo-gallery-single img {
+    aspect-ratio: 1 / 1;
+}
+
+@media (max-width: 576px) {
+    .photo-gallery {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .photo-gallery figcaption {
+        padding: 8px 10px;
+        font-size: 13px;
+    }
+
+    .photo-gallery-single {
+        grid-template-columns: 1fr;
+    }
+}
