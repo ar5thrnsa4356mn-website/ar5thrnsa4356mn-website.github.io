@@ -2342,3 +2342,55 @@ ul {
         display: none;
     }
 }
+
+/* ========================================
+   Mobile Refinements
+   ======================================== */
+@media (max-width: 768px) {
+    .logo-img {
+        height: 64px;
+    }
+
+    .page-hero {
+        padding: 110px 0 50px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-content {
+        padding: 96px 16px 48px;
+    }
+
+    .hero-subtitle {
+        font-size: 12px;
+        letter-spacing: 2px;
+        padding: 6px 16px;
+        margin-bottom: 16px;
+    }
+
+    .hero-title {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+        margin-bottom: 28px;
+    }
+
+    .hero-scroll-indicator {
+        display: none;
+    }
+
+    .back-to-top {
+        right: 24px;
+        bottom: 88px;
+        width: 44px;
+        height: 44px;
+    }
+
+    .footer-links a {
+        display: inline-block;
+        padding: 6px 0;
+    }
+}
