@@ -1334,6 +1334,12 @@ ul {
 
 .page-hero .hero-overlay {
     opacity: 0.1;
+    pointer-events: none;
+}
+
+.page-hero .container {
+    position: relative;
+    z-index: 1;
 }
 
 .page-hero h1 {
